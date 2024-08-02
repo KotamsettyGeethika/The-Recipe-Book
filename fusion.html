@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Styles for the page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image:  linear-gradient(to left,#ffffff, #acabab);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .image {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hotspot {
+            position: absolute;
+            background-color: rgba(255, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First Image -->
+        <div class="image">
+            <a href="north.html"><img src="Vada-Pav.jpg" alt="Image 1"></a>
+            <!-- Hotspots for Image 1 -->
+            <div class="hotspot" style="top: 50%; left: 50%;" title="Object 1"></div>
+            <div class="hotspot" style="top: 30%; left: 20%;" title="Object 2"></div>
+        </div>
+        
+        <!-- Second Image -->
+        <div class="image">
+            <a href="1.html"><img src="Vada-Pav.jpg" alt="Image 2"></a>
+            <!-- Hotspots for Image 2 -->
+            <div class="hotspot" style="top: 60%; left: 40%;" title="Object 3"></div>
+            <div class="hotspot" style="top: 20%; left: 70%;" title="Object 4"></div>
+        </div>
+        
+        <!-- Add more images with hotspots and links as needed -->
+    </div>
+</body>
+</html>

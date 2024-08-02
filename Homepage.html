@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Aroma</title>
+    <style>
+        
+        body{
+            background-image: url(bbbb.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            
+        }
+        img{
+            width: 14em;
+            height: 14em;
+            margin: 0em;
+        }
+        .d1{
+            padding-left: 70em;
+            padding-top: 18em;
+            text-align: center;
+        }
+        .b1{
+            margin-top: -45em;
+            padding-left: 60em;
+        }
+        button{
+            width: 12em;
+            height: 3em;
+            font-size: 15px;
+            border-radius: 2em;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        #text {
+    position: absolute;
+    left:2000px;
+    right: 0px; /* Initially position outside the screen */
+    transition: left 1s ease; /* Smooth transition */
+  }
+  #container {
+        position: relative;
+        height: 100vh;
+    }
+    #text-area {
+        position: fixed;
+        bottom: 0;
+        width: 20em;
+        background-color: #333;
+        color: #fff;
+        padding-bottom: 20em;
+        box-sizing: border-box;
+        transition: transform 0.7s ease;
+        transform: translateY(100%);
+        margin-left: 3em;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+    }
+    #text-area.open {
+        transform: translateY(0);
+    }
+    img{
+        width: 20em;
+        height: 15em;
+        border-radius: 10%;
+    }
+    #container1 {
+        position: relative;
+        height: 100vh;
+    }
+   
+   
+    </style>
+</head>
+<body>
+    <img src="Logo.png" alt="">
+    <div class="d1">
+        <h1>ANTIQUE AROMA</h1>
+        <h1>Travel Through Taste..</h1>
+    </div>
+    <div class="b1">
+        <button>Login</button>
+        <button>SignUp</button>
+    </div>
+    <div id="text">
+        <img src="Vada-Pav.jpg" alt="">
+    </div>
+  
+    <script>
+      window.onload = function() {
+        var slideImage = document.getElementById('text');
+        text.style.left = '60%'; // Move the image to the center
+      };
+    </script>
+    <div id="container">
+        <!-- Your website content goes here -->
+    </div>
+    
+    <div id="text-area">
+        <img src="Vada-Pav.jpg" alt="">
+    </div>
+    
+
+    
+    <script>
+        window.onload = function() {
+            var textArea = document.getElementById('text-area');
+            
+            setTimeout(function() {
+                textArea.classList.add('open');
+            }, 1000); // Adjust delay time as needed
+        };
+    </script>
+    
+ 
+</body>
+</html>
